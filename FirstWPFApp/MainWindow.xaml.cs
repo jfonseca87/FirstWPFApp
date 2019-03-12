@@ -26,6 +26,7 @@ namespace FirstWPFApp
             InitializeComponent();
 
             App.Number = 10;
+            App.Name = "Pepito Perez"
             something();
         }
 
@@ -33,6 +34,7 @@ namespace FirstWPFApp
         public void something()
         {
             int numberToShow = App.Number;
+            string actualName = App.Name;
         }
 
         private void btnRed_Click(object sender, RoutedEventArgs e)

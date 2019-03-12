@@ -20,9 +20,29 @@ namespace FirstWPFApp
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+
+            App.Number = 10;
+            something();
+        }
+
+
+        public void something()
+        {
+            int numberToShow = App.Number;
+        }
+
+        private void btnRed_Click(object sender, RoutedEventArgs e)
+        {
+            this.Resources["DynamicColor"] = new SolidColorBrush(Colors.Red);
+        }
+
+        private void btnBlue_Click(object sender, RoutedEventArgs e)
+        {
+            this.Resources["DynamicColor"] = new SolidColorBrush(Colors.Blue);
         }
     }
 }

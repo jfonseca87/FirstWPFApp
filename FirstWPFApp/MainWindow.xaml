@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:FirstWPFApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <SolidColorBrush Color="Red" x:Key="RedBrush" />
+        <SolidColorBrush Color="Blue" x:Key="BlueBrush" />
+    </Window.Resources>
     <Grid>
-        
+        <Button Background="{StaticResource RedBrush}" FontWeight="Bold" Content="Button with static resources" Width="200" Margin="37,40,555,321" />
+        <Button Background="{DynamicResource DynamicColor}" Width="200" Height="100" Margin="37,165,555,154"/>
+        <Button x:Name="btnBlue" Width="200" Margin="461,244,131,117" Click="btnBlue_Click" Content="Change to Blue color"/>
+        <Button x:Name="btnRed" Width="200" Margin="461,115,131,248" Click="btnRed_Click" Content="Change to Red color"/>
     </Grid>
 </Window>

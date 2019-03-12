@@ -13,5 +13,12 @@ namespace FirstWPFApp
     /// </summary>
     public partial class App : Application
     {
+        private static int number;
+
+        public static int Number
+        {
+            get => number;
+            set => number = value;
+        }
     }
 }

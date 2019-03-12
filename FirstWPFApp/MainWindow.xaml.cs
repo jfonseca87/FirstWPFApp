@@ -26,7 +26,7 @@ namespace FirstWPFApp
             InitializeComponent();
 
             App.Number = 10;
-            App.Name = "Pepito Perez"
+            App.Name = "Pepito Perez";
             something();
         }
 

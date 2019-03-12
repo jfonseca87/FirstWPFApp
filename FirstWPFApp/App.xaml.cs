@@ -20,5 +20,13 @@ namespace FirstWPFApp
             get => number;
             set => number = value;
         }
+
+        private static string name;
+
+        public static string Name
+        {
+            get => name;
+            set => name = value;
+        }
     }
 }
